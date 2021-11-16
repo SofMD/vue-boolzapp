@@ -71,6 +71,7 @@ body {
 /* LEFT SIDE */
 .left-side {
     width: 35%;
+    overflow-y: auto;
 }
 
 /* user section */
@@ -127,8 +128,12 @@ body {
     padding: 0 25px;
     font-size: 17px;
 }
+
 .contact {
     margin-bottom: 20px;
+}
+.contact:hover {
+    background-color: #e0dede;
 }
 
 .contact img {
@@ -168,8 +173,39 @@ header  img {
 main {
     background-image: url(../img/mine.jpg);
     flex-grow: 1;
+    overflow-y: auto;
 }
 
+.message-container {
+    width: 85%;
+    margin: 60px auto;
+}
+
+.sent {
+    width: 40%;
+    margin: 5px;
+    padding: 15px 10px 5px;
+    background-color: #d8fac1;
+    border-radius: 10px;
+    font-size: 15px;
+    position: relative;
+    left: 60%;
+}
+
+.received {
+    width: 40%;
+    margin: 5px 0;
+    padding: 15px 10px 5px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.mess-date {
+    font-size: 12px;
+    color: rgb(179, 177, 177);
+    text-align: end;
+}
 
 /* footer */
 footer {
