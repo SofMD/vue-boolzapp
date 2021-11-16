@@ -95,15 +95,29 @@ body {
 }
 
 
+/* input-text */
 
+.input-text {
+    padding: 10px 25px;
+}
 
+.input-text i {
+    font-size: 16px;
+}
 
-
-
-
-
-
-
+.input-text input {
+    padding: 6px 7px;
+    height: 40px;
+    width: 400px ;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+    margin-left: 15px;
+    color: grey;
+}
+.input-text input:focus {
+    border: 2px solid #99defc;
+}
 
 
 
