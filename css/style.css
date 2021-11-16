@@ -1,9 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
-}
+
 
 i {
     color: #b8b8b8;
@@ -60,11 +55,12 @@ body {
     outline: none;
     margin-left: 15px;
     color: grey;
+    font-size: 14px;
 }
 
 
 /* CONTAINER */
-.container {
+.container-app {
     width: 80%;
     height: 95%;
     min-width: 900px;
@@ -81,22 +77,18 @@ body {
 /* user section */
 .user-section {
     background-color: #ececec;
-    padding: 10px 15px;
 }
 
 .user-section img {
     max-width: 50px;
-    margin-right: 10px;
 }
 
 /* notifications-banner */
 .not-banner {
     background-color: #99defc;
-    padding: 17px 15px;
 }
 
 .not-banner i {
-    padding: 12px 9px;
     background-color: #f4fbff;
     color: #99defc;
 }
@@ -105,7 +97,6 @@ body {
     display: block;
     margin-top: 3px;
     font-size: 13px;
-    font-weight: bold;
     text-decoration: underline;
     color:  #5c8091;
 }
@@ -113,36 +104,22 @@ body {
 
 /* input-text */
 
-.input-text {
-    padding: 10px 25px;
-}
-
-.input-text i {
-    font-size: 16px;
-}
-
 .input-text input:focus {
     border: 2px solid #99defc;
 }
 
-/* contact */
 
+/* contact */
 .contact-list {
     list-style: none;
-    padding: 0 25px;
-    font-size: 17px;
 }
 
-.contact {
-    margin-bottom: 20px;
-}
 .contact:hover {
     background-color: #e0dede;
 }
 
 .contact img {
     max-width: 60px;
-    margin-right: 20px;
 }
 
 
@@ -151,24 +128,21 @@ body {
 .right-side {
     width: 65%;
     border-left: 1px solid lightgray;
-    flex-direction: column;
 }
 
 /* header */
 .right-side header {
     background-color: #ececec;
-    padding: 10px 15px;
+
 }
 
 header  img {
     max-width: 50px;
-    margin-right: 15px;
 }
 
 .header-acces {
     color: #767d80;
     font-size: 13px;
-    font-weight: bold;
 }
 
 /* main */
@@ -178,40 +152,32 @@ main {
     overflow-y: auto;
 }
 
-.message-container {
-    width: 85%;
+ main .container {
+    width: 90%;
     margin: 60px auto;
 }
 
 .sent, .received {
-    width: 40%;
-    padding: 15px 10px 5px;
+    padding: 12px 10px 5px;
     border-radius: 10px;
     font-size: 15px;
 }
 .sent {
-    margin: 5px;
     background-color: #d8fac1;
-    position: relative;
-    left: 60%;
 }
 
 .received {
-    margin: 5px 0;
     background-color: #ffffff;
 }
 
 .mess-date {
-    font-size: 12px;
+    font-size: 10px;
     color: rgb(179, 177, 177);
     text-align: end;
 }
 
 
 /* footer */
-footer {
-    padding: 20px 30px;
-}
 
 footer input:focus {
     border: 2px solid #99defc;
