@@ -24,9 +24,9 @@
             <!-- user -->
             <div class="user-section d-fl al-it sp-bw">
                 <!-- image and text -->
-                <div class="user-image d-fl al-it">
-                    <img src="./img/avatar_io.jpg" alt="user-image" class="brd-r">
-                    <span>Nome Utente</span>
+                <div class="user-image d-fl al-it" v-for="io in user">
+                    <img :src="`./img/avatar${io.avatar}.jpg`" alt="user-image" class="brd-r">
+                    <span>{{io.name}}</span>
                 </div>
                 <!-- icons -->
                 <div class="user-icons">
@@ -124,6 +124,7 @@
                 <!-- icon -->
                 <a href="#"><i class="fas fa-microphone"></i></a>
             </footer>
+
         </section>
 
 

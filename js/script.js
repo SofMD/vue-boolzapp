@@ -2,6 +2,14 @@ const app = new Vue({
     el: '#app',
 
     data: {
+        user: [
+            {
+                name: 'Martina',
+                avatar: '_io',
+            }
+        ],
+
+
         contacts: [
             {
                 name: 'Michele',
