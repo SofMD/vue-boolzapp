@@ -137,23 +137,26 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* RIGHT SIDE*/
 .right-side {
     width: 65%;
+    border-left: 1px solid lightgray;
+}
+
+/* header */
+.right-side header {
+    background-color: #ececec;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+header  img {
+    max-width: 50px;
+    margin-right: 15px;
+}
+
+.header-acces {
+    color: #767d80;
+    font-size: 13px;
+    font-weight: bold;
 }
