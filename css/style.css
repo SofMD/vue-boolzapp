@@ -23,8 +23,8 @@ body {
     background-image: linear-gradient(
         to bottom,
         #009f92 0%,
-        #009f92 20%,
-        #dcdfda 20%,
+        #009f92 15%,
+        #dcdfda 15%,
         #dcdfda 100%
     );
 }
@@ -44,7 +44,7 @@ body {
 }
 
 
-/* container */
+/* CONTAINER */
 .container {
     width: 80%;
     height: 95%;
@@ -55,14 +55,14 @@ body {
 
 .left-side, .right-side {
     height: 100%;
-    border: 1px solid black;
 }
 
-/* left side */
+/* LEFT SIDE */
 .left-side {
     width: 35%;
 }
 
+/* user section */
 .user-section {
     background-color: #ececec;
     justify-content: space-between;
@@ -73,7 +73,42 @@ body {
     max-width: 50px;
 }
 
-/* right side */
+/* notifications-banner */
+.not-banner {
+    background-color: #99defc;
+    padding: 17px 15px;
+}
+
+.not-banner i {
+    padding: 12px 9px;
+    background-color: #f4fbff;
+    color: #99defc;
+}
+
+.not-banner .not-a {
+    display: block;
+    text-decoration: underline;
+    color:  #5c8091;
+    font-size: 13px;
+    margin-top: 3px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RIGHT SIDE*/
 .right-side {
     width: 65%;
 }
