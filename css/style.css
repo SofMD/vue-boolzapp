@@ -23,8 +23,8 @@ body {
     background-image: linear-gradient(
         to bottom,
         #009f92 0%,
-        #009f92 15%,
-        #dcdfda 15%,
+        #009f92 20%,
+        #dcdfda 20%,
         #dcdfda 100%
     );
 }
@@ -118,6 +118,37 @@ body {
 .input-text input:focus {
     border: 2px solid #99defc;
 }
+
+/* contact */
+
+.contact-list {
+    list-style: none;
+    padding: 0 25px;
+    font-size: 17px;
+}
+.contact {
+    margin-bottom: 20px;
+}
+
+.contact img {
+    max-width: 60px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -56,10 +56,17 @@
             <div class="input-text">
                 <a href="#"><i class="fas fa-search"></i></a>
                 <input type="text" placeholder="Cerca o inizia una nuova chat">
-
             </div>
 
             <!-- contact -->
+            <div class="contact-container">
+                <ul class="contact-list">
+                    <li class="contact d-fl al-it" v-for="el in contacts">
+                        <img :src="`./img/avatar${el.avatar}.jpg`" alt="img contact" class="brd-r">
+                        <span>{{el.name}}</span>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- right -->
