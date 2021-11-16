@@ -5,6 +5,16 @@
     font-family: 'Lato', sans-serif;
 }
 
+i {
+    color: #b8b8b8;
+    font-size: 22px;
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -19,9 +29,51 @@ body {
     );
 }
 
+
+/* utility */
+.d-fl {
+    display: flex;
+}
+
+.brd-r {
+    border-radius: 50%;
+}
+
+.al-it{
+    align-items: center;
+}
+
+
+/* container */
 .container {
     width: 80%;
     height: 95%;
     min-width: 900px;
     background-color: #ffffff;
+}
+
+
+.left-side, .right-side {
+    height: 100%;
+    border: 1px solid black;
+}
+
+/* left side */
+.left-side {
+    width: 35%;
+}
+
+.user-section {
+    background-color: #ececec;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.user-section img {
+    max-width: 50px;
+}
+
+/* right side */
+.right-side {
+    width: 65%;
 }
