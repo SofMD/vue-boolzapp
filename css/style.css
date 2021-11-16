@@ -43,6 +43,14 @@ body {
     align-items: center;
 }
 
+.sp-bw {
+    justify-content: space-between;
+}
+
+.h100 {
+    height: 100%;
+}
+
 .input-ut {
     padding: 6px 7px;
     height: 40px;
@@ -64,10 +72,6 @@ body {
 }
 
 
-.left-side, .right-side {
-    height: 100%;
-}
-
 /* LEFT SIDE */
 .left-side {
     width: 35%;
@@ -77,7 +81,6 @@ body {
 /* user section */
 .user-section {
     background-color: #ececec;
-    justify-content: space-between;
     padding: 10px 15px;
 }
 
@@ -99,11 +102,11 @@ body {
 
 .not-banner .not-a {
     display: block;
+    margin-top: 3px;
+    font-size: 13px;
+    font-weight: bold;
     text-decoration: underline;
     color:  #5c8091;
-    font-size: 13px;
-    margin-top: 3px;
-    font-weight: bold;
 }
 
 
@@ -148,13 +151,11 @@ body {
     width: 65%;
     border-left: 1px solid lightgray;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 /* header */
 .right-side header {
     background-color: #ececec;
-    justify-content: space-between;
     padding: 10px 15px;
 }
 
@@ -181,24 +182,22 @@ main {
     margin: 60px auto;
 }
 
-.sent {
+.sent, .received {
     width: 40%;
-    margin: 5px;
     padding: 15px 10px 5px;
-    background-color: #d8fac1;
     border-radius: 10px;
     font-size: 15px;
+}
+.sent {
+    margin: 5px;
+    background-color: #d8fac1;
     position: relative;
     left: 60%;
 }
 
 .received {
-    width: 40%;
     margin: 5px 0;
-    padding: 15px 10px 5px;
     background-color: #ffffff;
-    border-radius: 10px;
-    font-size: 15px;
 }
 
 .mess-date {
@@ -207,10 +206,10 @@ main {
     text-align: end;
 }
 
+
 /* footer */
 footer {
     padding: 20px 30px;
-    justify-content: space-between;
 }
 
 footer input:focus {
