@@ -161,6 +161,7 @@ main {
     padding: 12px 10px 5px;
     border-radius: 10px;
     font-size: 15px;
+    margin-bottom: 10px;
 }
 .sent {
     background-color: #d8fac1;
