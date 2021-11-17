@@ -63,7 +63,7 @@
             <!-- contact -->
             <div>
                 <ul class="contact-list px-4 fs-6">
-                    <li class="contact d-fl al-it mb-3" v-for="el in contacts">
+                    <li class="contact d-fl al-it mb-3" v-for="(el, index) in contacts" @click="clickcontact(index)">
                         <img :src="`./img/avatar${el.avatar}.jpg`" alt="img contact" class="brd-r me-3">
                         <span>{{el.name}}</span>
                     </li>
@@ -102,23 +102,16 @@
                 <div class="container">
                     <!-- messaggi -->
                     <div class="row mb-3">
-                        <div class="col-4 offset-8 sent">
-                            <div>Messaggio inviato</div>
-                            <div class="mess-date">10/01/2020 15:30:55</div>
+                        <div class="col-4 offset-8 sent" v-for="mes in contacts.messages">
+                            <div>{{mes[activeSlide].text}}</div>
+                            <div class="mess-date">{{}}</div>
                         </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row mb-3">
                         <div class="col-4 received">
                             <div>Messaggio ricevuto</div>
                             <div class="mess-date">10/01/2020 15:35:23</div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-4 offset-8 sent">
-                            <div>Messaggio inviato</div>
-                            <div class="mess-date">10/01/2020 15:30:55</div>
                         </div>
                     </div>
 

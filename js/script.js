@@ -93,7 +93,15 @@ const app = new Vue({
                     }
                 ],
             },
-        ]
+        ],
         
+        activeSlide: 0,
+    },
+
+    methods: {
+        clickcontact(index) {
+            this.activeSlide = index;
+            console.log(this.activeSlide)
+        }
     }
 })
