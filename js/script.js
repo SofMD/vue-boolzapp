@@ -4,11 +4,10 @@ const app = new Vue({
     data: {
         user: [
             {
-                name: 'Martina',
+                name: 'Sofia',
                 avatar: '_io',
             }
         ],
-
 
         contacts: [
             {
@@ -96,12 +95,41 @@ const app = new Vue({
         ],
         
         activeSlide: 0,
+        newMessage: '',
     },
 
     methods: {
         clickcontact(index) {
             this.activeSlide = index;
             console.log(this.activeSlide)
-        }
-    }
+        },
+
+        // aggiungere messaggi
+        addNewMessage(){
+            if( this.newMessage !== ''){
+                console.log(this.newMessage);
+
+                //aggiungo al dom
+                this.contacts[this.activeSlide].messages.push({
+                    date: dayjs().format('D /M /YYYY - H:m:s') ,
+                    text: this.newMessage,
+                    status: 'sent',
+                })
+
+                //cancello messaggio nell'input
+                this.newMessage = '';
+            }
+
+            // messaggio instantaneo
+            const timerMessage = setTimeout(() => {
+
+                this.contacts[this.activeSlide].messages.push({
+                    date: dayjs().format('D /M /YYYY - H:m:s') ,
+                    text: 'ok',
+                    status: 'received',
+                })
+            }, 1000);
+        },
+    },
+
 })
