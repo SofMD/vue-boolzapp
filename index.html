@@ -68,7 +68,7 @@
             <!-- contact -->
             <div>
                 <ul class="contact-list px-4 fs-6">
-                    <li class="contact d-fl al-it mb-3" v-for="(el, index) in contacts" @click="clickcontact(index)" v-if="el.name.toLowerCase().includes(newSearch.toLowerCase())">
+                    <li class="contact d-fl al-it mb-3" v-for="(el, index) in contacts" @click="clickcontact(index)" v-if="el.visible === true">
                         <img :src="`./img/avatar${el.avatar}.jpg`" alt="img contact" class="brd-r me-3">
                         <span>{{el.name}}</span>
                     </li>
@@ -141,3 +141,5 @@
     <script src="./js/script.js"></script>
 </body>
 </html>
+
+<!-- el.name.toLowerCase().includes(newSearch.toLowerCase()) -->

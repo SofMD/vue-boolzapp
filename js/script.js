@@ -141,14 +141,13 @@ const app = new Vue({
             console.log(this.newSearch);
 
             this.contacts.forEach(element => {
-                if( !element.name.toLowerCase().includes(this.newSearch.toLowerCase())){
-                    element.visible === false;
-                }else{
+                if( element.name.toLowerCase().includes(this.newSearch.toLowerCase())){
                     element.visible === true;
+                }else{
+                    element.visible === false;
                 }
             });
 
-            //ora questo non va, devo richiamare n qualche mod o la funzione, se metto solo un v-if="el.visible === true" non vaaadkmklfsl
         },
 
 
