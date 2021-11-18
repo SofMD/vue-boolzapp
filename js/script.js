@@ -96,7 +96,7 @@ const app = new Vue({
         
         activeSlide: 0,
         newMessage: '',
-        newSearch: ''.toLowerCase(),
+        newSearch: '',
 
     },
 
@@ -139,6 +139,16 @@ const app = new Vue({
         //ottengo nuovo messaggio
         searchContact(){
             console.log(this.newSearch);
+
+            this.contacts.forEach(element => {
+                if( !element.name.toLowerCase().includes(this.newSearch.toLowerCase())){
+                    element.visible === false;
+                }else{
+                    element.visible === true;
+                }
+            });
+
+            //ora questo non va, devo richiamare n qualche mod o la funzione, se metto solo un v-if="el.visible === true" non vaaadkmklfsl
         },
 
 
