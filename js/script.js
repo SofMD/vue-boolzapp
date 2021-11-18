@@ -96,7 +96,7 @@ const app = new Vue({
         
         activeSlide: 0,
         newMessage: '',
-        newSearch: '',
+        newSearch: ''.toLowerCase(),
 
     },
 
