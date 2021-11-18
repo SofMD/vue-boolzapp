@@ -57,13 +57,18 @@
             <!-- input text -->
             <div class="input-text py-3 px-4">
                 <a href="#"><i class="fas fa-search fs-6"></i></a>
-                <input type="text" placeholder="Cerca o inizia una nuova chat" class="input-ut">
+                <input type="text"
+                 placeholder="Cerca o inizia una nuova chat" 
+                 class="input-ut"
+                 v-model="newSearch"
+                 v-on:keyup="searchContact"
+                 >
             </div>
 
             <!-- contact -->
             <div>
                 <ul class="contact-list px-4 fs-6">
-                    <li class="contact d-fl al-it mb-3" v-for="(el, index) in contacts" @click="clickcontact(index)">
+                    <li class="contact d-fl al-it mb-3" v-for="(el, index) in contacts" @click="clickcontact(index)" v-if="el.name.includes(newSearch)">
                         <img :src="`./img/avatar${el.avatar}.jpg`" alt="img contact" class="brd-r me-3">
                         <span>{{el.name}}</span>
                     </li>

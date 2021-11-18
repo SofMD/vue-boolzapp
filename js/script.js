@@ -96,7 +96,11 @@ const app = new Vue({
         
         activeSlide: 0,
         newMessage: '',
+        newSearch: '',
+
     },
+
+
 
     methods: {
         clickcontact(index) {
@@ -130,6 +134,18 @@ const app = new Vue({
                 })
             }, 1000);
         },
+
+
+        //ottengo nuovo messaggio
+        searchContact(){
+            console.log(this.newSearch);
+        },
+
+
+
+
+
+
     },
 
 })
